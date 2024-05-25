@@ -1,0 +1,170 @@
+.instagram-icon,
+.profile-picture-icon {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin: 0 !important;
+  top: 170px;
+  left: 20px;
+  z-index: 2;
+}
+.instagram-icon {
+  height: 20px;
+  width: 20px;
+  top: -2px;
+  left: -0.5px;
+}
+.followers,
+.m {
+  position: relative;
+}
+.m {
+  height: 16px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 32px;
+  z-index: 2;
+}
+.followers {
+  align-self: stretch;
+  height: 11px;
+  font-size: var(--font-size-2xs);
+  line-height: 15.2px;
+  font-family: var(--font-open-sans);
+  color: var(--color-gray-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 53px;
+}
+.follower-count {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-6xs);
+}
+.instagram-icon-parent {
+  width: 53.5px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.youtube-icon {
+  height: 14.2px;
+  width: 20px;
+  position: absolute;
+  margin: 0 !important;
+  top: 0.9px;
+  left: -7.5px;
+  z-index: 2;
+}
+.k,
+.subscribers {
+  position: relative;
+}
+.k {
+  height: 16px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 61px;
+  z-index: 2;
+}
+.subscribers {
+  width: 69px;
+  line-height: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 69px;
+}
+.subscriber-label {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-6xs) 0 0;
+  font-size: var(--font-size-2xs);
+  color: var(--color-gray-100);
+  font-family: var(--font-open-sans);
+}
+.subscriber-count {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 9px;
+}
+.youtube-icon-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  color: #ff487f;
+}
+.stats-containers {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.stats,
+.store-child {
+  box-sizing: border-box;
+}
+.stats {
+  width: 252.5px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 26px;
+}
+.store-child {
+  width: 0;
+  height: 46px;
+  position: absolute;
+  margin: 0 !important;
+  top: 211px;
+  right: 139px;
+  background-color: var(--color-white);
+  border-right: 0.5px solid #9e9d9d;
+  z-index: 2;
+}
+.bio-container,
+.store {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.bio-container {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: 2px;
+  max-width: 100%;
+}
+.store {
+  width: 354px;
+  position: relative;
+  border-radius: 25px;
+  background-color: var(--color-white);
+  overflow: hidden;
+  align-items: flex-end;
+  padding: 209px 0 0;
+  box-sizing: border-box;
+  gap: 32px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-size: var(--font-size-4xl);
+  color: #ab1aa1;
+  font-family: var(--font-domine);
+  
+  
+}
