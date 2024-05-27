@@ -1,26 +1,31 @@
 import "./BottomNavUserEcosystem.css";
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
+import { FaRegMinusSquare } from "react-icons/fa";
+
 const BottomNavUserEcosystem = ({ className = "" }) => {
+  const [selected, setSelected] = useState("Feed");
+
   return (
     <footer className={`bottom-nav-user-ecosystem ${className}`}>
       <img className="subtract-icon" alt="" src="/subtract.svg" />
       <img className="noise-texture" alt="" src="/noise--texture@2x.png" />
       <div className="bottom-nav-user-ecosystem-child" />
       <div className="navigation">
-        <div className="profile-button">
-          <img
-            className="feed-icon"
-            loading="lazy"
-            alt=""
-            src="/feed-icon@2x.png"
-          />
+        <div
+          className={`profile-button ${selected === "Feed" ? "selected" : ""}`}
+          onClick={() => setSelected("Feed")}
+        >
+          <FaRegMinusSquare size={24} className="icon" />
+          <div className="feed">Feed</div>
         </div>
-        <div className="feed">Feed</div>
       </div>
       <div className="shop-container-parent">
         <div className="shop-container">
-          <div className="shop-items">
+          <div
+            className={`shop-items ${selected === "Shop" ? "selected" : ""}`}
+            onClick={() => setSelected("Shop")}
+          >
             <div className="shop-parent">
               <div className="shop-label">
                 <div className="wrapper-shop-icon">
@@ -35,7 +40,12 @@ const BottomNavUserEcosystem = ({ className = "" }) => {
               <div className="shop">Shop</div>
             </div>
           </div>
-          <div className="shop-items1">
+          <div
+            className={`shop-items1 ${
+              selected === "My Items" ? "selected" : ""
+            }`}
+            onClick={() => setSelected("My Items")}
+          >
             <div className="my-items-wrapper">
               <img
                 className="my-items-icon"
@@ -51,7 +61,10 @@ const BottomNavUserEcosystem = ({ className = "" }) => {
           <div className="home-button" />
         </div>
       </div>
-      <div className="navigation1">
+      <div
+        className={`navigation1 ${selected === "Me" ? "selected" : ""}`}
+        onClick={() => setSelected("Me")}
+      >
         <img
           className="user-profile-my-profile-icon"
           loading="lazy"

@@ -3,16 +3,16 @@ import React from "react";
 import PropTypes from "prop-types";
 const GridContainer = ({ className = "" }) => {
   return (
-    <div className={`grid-container ${className}`}>
-      <div className="grid-row">
-        <div className="highlight-items" />
-        <div className="highlight-items1" />
-        <div className="grid-row1">
-          <div className="highlight-items2" />
-          <div className="highlight-items3" />
-          <div className="grid-row2">
-            <div className="highlight-items4" />
-            <div className="highlight-items5" />
+    <div className={`grid-container1`}>
+      <div className="grid-row1">
+        <div className={`outer-container ${className}`}>
+          <div className="grid-container">
+            <div className="grid-item"></div>
+            <div className="grid-item"></div>
+            <div className="grid-item"></div>
+            <div className="grid-item"></div>
+            <div className="grid-item"></div>
+            <div className="grid-item"></div>
           </div>
         </div>
       </div>

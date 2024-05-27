@@ -1,59 +1,37 @@
-.highlight-items,
-.highlight-items1 {
-  height: 202px;
-  width: 128px;
-  position: absolute;
-  margin: 0 !important;
-  bottom: -19px;
-  background-color: var(--color-gainsboro);
+.outer-container {
+  /* Set the desired height for the scrollable area */
+  overflow-y: auto; /* Enable vertical scrolling */
+
+  width: 100%;
+  height: 220px; /* Set the desired height for the scrollable area */
+  overflow-y: auto;
+  
 }
-.highlight-items {
-  left: 0;
+.outer-container::-webkit-scrollbar {
+  width: 0; /* Width of the scrollbar */
+  background: transparent; /* Color of the scrollbar */
 }
-.highlight-items1 {
-  left: calc(50% - 64px);
-}
-.highlight-items2,
-.highlight-items3,
-.highlight-items4,
-.highlight-items5 {
-  align-self: stretch;
-  flex: 1;
-  position: relative;
-  background-color: var(--color-gainsboro);
-}
-.grid-row1,
-.grid-row2 {
-  flex: 1;
-  gap: var(--gap-12xs);
-}
-.grid-row2 {
-  height: 405px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.grid-row1 {
-  height: 386px;
-  padding: 0 0 var(--padding-165xl);
-  box-sizing: border-box;
-}
-.grid-container,
-.grid-row,
-.grid-row1 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  max-width: 100%;
-}
-.grid-row {
-  flex: 1;
-  position: relative;
+
+.outer-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 .grid-container {
-  align-self: stretch;
-  padding: 0 var(--padding-11xs);
+  display: grid;
+  grid-template-columns: repeat(3, 117px);
+  grid-template-rows: repeat(2, 180px);
+  gap: 2px; /* Adjust the gap between grid items if needed */
+
   box-sizing: border-box;
+}
+
+.grid-item {
+  background-color: #f0f0f0;
+}
+
+.grid-container1 {
+  width: 100%;
+ 
+  margin-bottom: 80px;
+  
 }
