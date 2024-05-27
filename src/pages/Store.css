@@ -141,10 +141,10 @@
 .store {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  
 }
 .bio-container {
-  align-self: stretch;
+  
   align-items: flex-start;
   gap: 2px;
   max-width: 100%;

@@ -2,10 +2,9 @@
   /* Set the desired height for the scrollable area */
   overflow-y: auto; /* Enable vertical scrolling */
 
-  width: 100%;
-  height: 80%; /* Set the desired height for the scrollable area */
+  width: 99%;
+  height: 300px;
   overflow-y: auto;
-  
 }
 .outer-container::-webkit-scrollbar {
   width: 0; /* Width of the scrollbar */
@@ -18,11 +17,9 @@
 }
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 117px);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 180px);
-  gap: 2px; /* Adjust the gap between grid items if needed */
-
-  box-sizing: border-box;
+  gap: 2px;
 }
 
 .grid-item {
@@ -30,8 +27,7 @@
 }
 
 .grid-container1 {
-  width: 100%;
- 
-  margin-bottom: 80px;
-  
+  width: 99%;
+
+  border: 1px solid orange;
 }
